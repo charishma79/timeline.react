@@ -1,0 +1,110 @@
+/* Write your CSS here */
+
+.course-details-container {
+  display: flex;
+  padding-left: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.course-duration-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .course-duration-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.course-title {
+  color: #171f46;
+  font-family: Roboto;
+  font-size: 20px;
+  margin-right: 300px;
+}
+
+.icon {
+  height: 20px;
+  color: #171f46;
+  margin-right: 5px;
+}
+
+.duration {
+  color: #171f46;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .course-title {
+    margin-right: 0px;
+    font-size: 15px;
+  }
+  .icon {
+    height: 14px;
+    color: #171f46;
+  }
+  .duration {
+    font-size: 10px;
+  }
+}
+
+.duration-container {
+  display: flex;
+  align-items: center;
+}
+
+.detail {
+  color: #1e293b;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .detail {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.tag {
+  margin-bottom: 1px;
+  margin-right: 5px;
+  background-color: lightgray;
+  height: 25px;
+  width: 180px;
+  text-align: center;
+  border-radius: 5px;
+  color: #1e293b;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .tags-container {
+    flex-direction: column;
+  }
+  .tag {
+    width: 100%;
+    font-size: 10px;
+    height: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 2px;
+  }
+}
